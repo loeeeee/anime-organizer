@@ -2,6 +2,8 @@
 
 It scans a media folder, and create symbolic links in another place with organized folder structure that can be processed by JellyFin server. It works on Linux. And the expected input folder structure is from VCB studio. However, other folder structure should also works fine, because of the ARTIFICIAL INTELLIGENCE of regular expression.
 
+Now, I can organize the media without moving the media.
+
 ## How to use
 
 The entry point is entry_point.py. 
@@ -259,3 +261,15 @@ test/target/Oniichan_Ha_Oshimai!/
     ├── S01E11.mkv -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [11][Ma10p_1080p][x265_flac_ac3].mkv
     ├── S01E12.chi.ass -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [12][Ma10p_1080p][x265_flac_2ac3].cht.ass
     └── S01E12.mkv -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [12][Ma10p_1080p][x265_flac_2ac3].mkv
+
+
+## Plan
+
+- Finish subtitle implementation
+- Add subtitle group and scarping group credits
+- Add OVA and SP support
+
+
+## Grand plan
+
+- Supporting other medias, like movies and music
