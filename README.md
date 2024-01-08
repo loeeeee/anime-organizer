@@ -8,10 +8,23 @@ Now, I can organize the media without moving the media.
 
 The entry point is entry_point.py. 
 
+
+## Plan
+
+- Finish subtitle implementation
+- Add subtitle group and scarping group credits
+- Add OVA and SP support
+
+
+## Grand plan
+
+- Supporting other medias, like movies and music
+
 ## Example
 
 ### Source
 
+```
 test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/
 ├── CDs
 │   ├── [230106] ORIGINAL SOUNDTRACK [24bit_48kHz] (flac)
@@ -232,9 +245,11 @@ test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/
 ├── [SweetSub&VCB-Studio] Oniichan ha Oshimai! [12][Ma10p_1080p][x265_flac_2ac3].cht.ass
 ├── [SweetSub&VCB-Studio] Oniichan ha Oshimai! [12][Ma10p_1080p][x265_flac_2ac3].mkv
 └── [SweetSub&VCB-Studio] Oniichan ha Oshimai! [Fonts].7z
+```
 
 ### Target
 
+```
 test/target/Oniichan_Ha_Oshimai!/
 └── Season_1
     ├── S01E01.chi.ass -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [01][Ma10p_1080p][x265_flac_2ac3].chs.ass
@@ -261,15 +276,5 @@ test/target/Oniichan_Ha_Oshimai!/
     ├── S01E11.mkv -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [11][Ma10p_1080p][x265_flac_ac3].mkv
     ├── S01E12.chi.ass -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [12][Ma10p_1080p][x265_flac_2ac3].cht.ass
     └── S01E12.mkv -> /home/foo/Projects/anime-organizer/test/mimic/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [Ma10p_1080p]/[SweetSub&VCB-Studio] Oniichan ha Oshimai! [12][Ma10p_1080p][x265_flac_2ac3].mkv
+```
 
-
-## Plan
-
-- Finish subtitle implementation
-- Add subtitle group and scarping group credits
-- Add OVA and SP support
-
-
-## Grand plan
-
-- Supporting other medias, like movies and music
