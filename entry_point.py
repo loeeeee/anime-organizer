@@ -6,7 +6,8 @@ working_dir = "test/mimic/" # Source media
 target = "test/target/" # Target directory where the symbolic link 
 
 def main() -> None:
-    base_dir = os.getcwd()
+    base_dir = os.path.dirname(os.path.realpath(__file__))
+    print(base_dir)
     Series.create_folder_if_not_exists(target)
 
     series_list = set()

@@ -39,7 +39,9 @@ class Extension:
 
 
 class FilterKeywords:
-    filter_words_path = "filter_words.yaml"
+    main_file_path = os.path.dirname(os.path.realpath(__file__))
+
+    filter_words_path = f"{main_file_path}/filter_words.yaml"
     with open(filter_words_path, "r", encoding="utf-8") as f:
         filter_words = yaml.safe_load(f)
     print(filter_words)
